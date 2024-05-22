@@ -23,7 +23,7 @@ namespace PrimTakipItirazSistemi
         {
             try
             {
-                using (SqlConnection baglantim = new SqlConnection("Data Source=MONSTER\\SQLEXPRESS; Initial Catalog=PrimTakipItirazSistemi; Integrated Security=True; TrustServerCertificate=True"))
+                using (SqlConnection baglantim = new SqlConnection(Form1.baglantiKodu))
                 {
                     string query = "SELECT AsistanID AS [Asistan ID], Ay AS [Ay],PrimID AS [Prim ID] ,PrimMiktari AS [Prim Miktarı], PrimAciklamasi AS [Prim Açıklaması] FROM Primler WHERE AsistanID = @AsistanID ORDER BY PrimID DESC";
                     SqlDataAdapter verileriListele = new SqlDataAdapter(query, baglantim);

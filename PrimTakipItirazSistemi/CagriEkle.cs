@@ -21,7 +21,7 @@ namespace PrimTakipItirazSistemi
         }
         
 
-        SqlConnection baglantim = new SqlConnection("Data Source=MONSTER\\SQLEXPRESS; Initial Catalog = PrimTakipItirazSistemi; Integrated Security=True; TrustServerCertificate=True");
+        SqlConnection baglantim = new SqlConnection(Form1.baglantiKodu);
 		private void temzile()//nesneleri temizler
 		{
 			textBox1.Clear(); textBox2.Clear(); mtbBaslangicSaati.Clear(); mtbBitisSaati.Clear(); comboBox1.Text=""; comboBox2.Text = "";

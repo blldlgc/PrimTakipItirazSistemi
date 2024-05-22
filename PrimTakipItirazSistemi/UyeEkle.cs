@@ -21,7 +21,7 @@ namespace PrimTakipItirazSistemi
 		{
 			InitializeComponent();
 		}
-		SqlConnection baglantim = new SqlConnection("Data Source=MONSTER\\SQLEXPRESS; Initial Catalog = PrimTakipItirazSistemi; Integrated Security=True; TrustServerCertificate=True");
+		SqlConnection baglantim = new SqlConnection(Form1.baglantiKodu);
 		
 		int parola_skoru = 0;
 		public void duzelt()
