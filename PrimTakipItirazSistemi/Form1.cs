@@ -17,7 +17,9 @@ namespace PrimTakipItirazSistemi
 		{
 			InitializeComponent();
 		}
-		SqlConnection baglantim = new SqlConnection("Data Source=MONSTER\\SQLEXPRESS; Initial Catalog = PrimTakipItirazSistemi; Integrated Security=True; TrustServerCertificate=True");
+        public static string baglantiKodu = "Data Source=MONSTER\\SQLEXPRESS; Initial Catalog = PrimTakipItirazSistemi; Integrated Security=True; TrustServerCertificate=True";
+
+		SqlConnection baglantim = new SqlConnection(baglantiKodu);
 		public static string tcno, adi, soyadi, yetki;
         //diğer sayfalarda id'leri kullanabilmek için static olarak tanımladık.
         public static int GirisYapanAsistanID; 

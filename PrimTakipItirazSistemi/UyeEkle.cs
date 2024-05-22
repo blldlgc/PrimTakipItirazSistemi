@@ -395,5 +395,10 @@ namespace PrimTakipItirazSistemi
 				MessageBox.Show("Yazı Rengi Kırmızı Olan Alanları Yeniden Gözden Geçiriniz.", "Prim Takip Itiraz Sistemi", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}//ekle butonu
-	}
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+			this.Close();
+        }
+    }
 }

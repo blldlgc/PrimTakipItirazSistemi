@@ -22,9 +22,7 @@ namespace PrimTakipItirazSistemi
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			TakimLideriPanel frmTakimLideri=new TakimLideriPanel();
-			frmTakimLideri.Show();
-
+			this.Close();
 		}
 		UyeEkle frmuye = new UyeEkle();
 		private void UyeListele_Load(object sender, EventArgs e)
