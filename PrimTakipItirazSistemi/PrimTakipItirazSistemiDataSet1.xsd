@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PrimTakipItirazSistemiDataSet1" targetNamespace="http://tempuri.org/PrimTakipItirazSistemiDataSet1.xsd" xmlns:mstns="http://tempuri.org/PrimTakipItirazSistemiDataSet1.xsd" xmlns="http://tempuri.org/PrimTakipItirazSistemiDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PrimTakipItirazSistemiConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PrimTakipItirazSistemiConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PrimTakipItirazSistemi.Properties.Settings.GlobalReference.Default.PrimTakipItirazSistemiConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CagrilarTableAdapter" GeneratorDataComponentClassName="CagrilarTableAdapter" Name="Cagrilar" UserDataComponentName="CagrilarTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PrimTakipItirazSistemiConnectionString (Settings)" DbObjectName="PrimTakipItirazSistemi.dbo.Cagrilar" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT GorusmeTarihi, BaslangicSaati, BitisSaati FROM dbo.Cagrilar</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="GorusmeTarihi" DataSetColumn="GorusmeTarihi" />
+              <Mapping SourceColumn="BaslangicSaati" DataSetColumn="BaslangicSaati" />
+              <Mapping SourceColumn="BitisSaati" DataSetColumn="BitisSaati" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="PrimTakipItirazSistemiConnectionString (Settings)" DbObjectName="PrimTakipItirazSistemi.dbo.Cagrilar" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT GorusmeTarihi, BaslangicSaati, BitisSaati FROM dbo.Cagrilar</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="GorusmeDurumlariTableAdapter" GeneratorDataComponentClassName="GorusmeDurumlariTableAdapter" Name="GorusmeDurumlari" UserDataComponentName="GorusmeDurumlariTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PrimTakipItirazSistemiConnectionString (Settings)" DbObjectName="PrimTakipItirazSistemi.dbo.GorusmeDurumlari" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT DurumAdi FROM dbo.GorusmeDurumlari</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DurumAdi" DataSetColumn="DurumAdi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="GorusmeKonulariTableAdapter" GeneratorDataComponentClassName="GorusmeKonulariTableAdapter" Name="GorusmeKonulari" UserDataComponentName="GorusmeKonulariTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PrimTakipItirazSistemiConnectionString (Settings)" DbObjectName="PrimTakipItirazSistemi.dbo.GorusmeKonulari" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[GorusmeKonulari] ([KonuAdi]) VALUES (@KonuAdi)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@KonuAdi" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="KonuAdi" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT KonuAdi FROM dbo.GorusmeKonulari</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="KonuAdi" DataSetColumn="KonuAdi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MusterilerTableAdapter" GeneratorDataComponentClassName="MusterilerTableAdapter" Name="Musteriler" UserDataComponentName="MusterilerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PrimTakipItirazSistemiConnectionString (Settings)" DbObjectName="PrimTakipItirazSistemi.dbo.Musteriler" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Musteriler] ([Musteri_Ad], [Musteri_Soyad]) VALUES (@Musteri_Ad, @Musteri_Soyad)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Musteri_Ad" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Musteri_Ad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Musteri_Soyad" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Musteri_Soyad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Musteri_Ad, Musteri_Soyad FROM dbo.Musteriler</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Musteri_Ad" DataSetColumn="Musteri_Ad" />
+              <Mapping SourceColumn="Musteri_Soyad" DataSetColumn="Musteri_Soyad" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PrimTakipItirazSistemiDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PrimTakipItirazSistemiDataSet1" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PrimTakipItirazSistemiDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Cagrilar" msprop:Generator_RowClassName="CagrilarRow" msprop:Generator_RowEvHandlerName="CagrilarRowChangeEventHandler" msprop:Generator_RowDeletedName="CagrilarRowDeleted" msprop:Generator_RowDeletingName="CagrilarRowDeleting" msprop:Generator_RowEvArgName="CagrilarRowChangeEvent" msprop:Generator_TablePropName="Cagrilar" msprop:Generator_RowChangedName="CagrilarRowChanged" msprop:Generator_UserTableName="Cagrilar" msprop:Generator_RowChangingName="CagrilarRowChanging" msprop:Generator_TableClassName="CagrilarDataTable" msprop:Generator_TableVarName="tableCagrilar">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GorusmeTarihi" msprop:Generator_UserColumnName="GorusmeTarihi" msprop:Generator_ColumnPropNameInTable="GorusmeTarihiColumn" msprop:Generator_ColumnPropNameInRow="GorusmeTarihi" msprop:Generator_ColumnVarNameInTable="columnGorusmeTarihi" type="xs:dateTime" />
+              <xs:element name="BaslangicSaati" msprop:Generator_UserColumnName="BaslangicSaati" msprop:Generator_ColumnPropNameInTable="BaslangicSaatiColumn" msprop:Generator_ColumnPropNameInRow="BaslangicSaati" msprop:Generator_ColumnVarNameInTable="columnBaslangicSaati" type="xs:duration" />
+              <xs:element name="BitisSaati" msprop:Generator_UserColumnName="BitisSaati" msprop:Generator_ColumnPropNameInTable="BitisSaatiColumn" msprop:Generator_ColumnPropNameInRow="BitisSaati" msprop:Generator_ColumnVarNameInTable="columnBitisSaati" type="xs:duration" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GorusmeDurumlari" msprop:Generator_RowClassName="GorusmeDurumlariRow" msprop:Generator_RowEvHandlerName="GorusmeDurumlariRowChangeEventHandler" msprop:Generator_RowDeletedName="GorusmeDurumlariRowDeleted" msprop:Generator_RowDeletingName="GorusmeDurumlariRowDeleting" msprop:Generator_RowEvArgName="GorusmeDurumlariRowChangeEvent" msprop:Generator_TablePropName="GorusmeDurumlari" msprop:Generator_RowChangedName="GorusmeDurumlariRowChanged" msprop:Generator_UserTableName="GorusmeDurumlari" msprop:Generator_RowChangingName="GorusmeDurumlariRowChanging" msprop:Generator_TableClassName="GorusmeDurumlariDataTable" msprop:Generator_TableVarName="tableGorusmeDurumlari">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DurumAdi" msprop:Generator_UserColumnName="DurumAdi" msprop:Generator_ColumnPropNameInTable="DurumAdiColumn" msprop:Generator_ColumnPropNameInRow="DurumAdi" msprop:Generator_ColumnVarNameInTable="columnDurumAdi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GorusmeKonulari" msprop:Generator_RowClassName="GorusmeKonulariRow" msprop:Generator_RowEvHandlerName="GorusmeKonulariRowChangeEventHandler" msprop:Generator_RowDeletedName="GorusmeKonulariRowDeleted" msprop:Generator_RowDeletingName="GorusmeKonulariRowDeleting" msprop:Generator_RowEvArgName="GorusmeKonulariRowChangeEvent" msprop:Generator_TablePropName="GorusmeKonulari" msprop:Generator_RowChangedName="GorusmeKonulariRowChanged" msprop:Generator_UserTableName="GorusmeKonulari" msprop:Generator_RowChangingName="GorusmeKonulariRowChanging" msprop:Generator_TableClassName="GorusmeKonulariDataTable" msprop:Generator_TableVarName="tableGorusmeKonulari">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KonuAdi" msprop:Generator_UserColumnName="KonuAdi" msprop:Generator_ColumnPropNameInTable="KonuAdiColumn" msprop:Generator_ColumnPropNameInRow="KonuAdi" msprop:Generator_ColumnVarNameInTable="columnKonuAdi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Musteriler" msprop:Generator_RowClassName="MusterilerRow" msprop:Generator_RowEvHandlerName="MusterilerRowChangeEventHandler" msprop:Generator_RowDeletedName="MusterilerRowDeleted" msprop:Generator_RowDeletingName="MusterilerRowDeleting" msprop:Generator_RowEvArgName="MusterilerRowChangeEvent" msprop:Generator_TablePropName="Musteriler" msprop:Generator_RowChangedName="MusterilerRowChanged" msprop:Generator_UserTableName="Musteriler" msprop:Generator_RowChangingName="MusterilerRowChanging" msprop:Generator_TableClassName="MusterilerDataTable" msprop:Generator_TableVarName="tableMusteriler">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Musteri_Ad" msprop:Generator_UserColumnName="Musteri_Ad" msprop:Generator_ColumnPropNameInTable="Musteri_AdColumn" msprop:Generator_ColumnPropNameInRow="Musteri_Ad" msprop:Generator_ColumnVarNameInTable="columnMusteri_Ad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Musteri_Soyad" msprop:Generator_UserColumnName="Musteri_Soyad" msprop:Generator_ColumnPropNameInTable="Musteri_SoyadColumn" msprop:Generator_ColumnPropNameInRow="Musteri_Soyad" msprop:Generator_ColumnVarNameInTable="columnMusteri_Soyad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
