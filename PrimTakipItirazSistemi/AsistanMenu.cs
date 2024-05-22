@@ -49,5 +49,12 @@ namespace PrimTakipItirazSistemi
             AsistanPrimListesi primListesi = new AsistanPrimListesi();
             primListesi.Show();
         }
+
+        private void Itırazlarım_Click(object sender, EventArgs e)
+        {
+			this.Hide();
+			AsistanItirazlari asistanItirazlari = new AsistanItirazlari();
+			asistanItirazlari.Show();
+        }
     }
 }

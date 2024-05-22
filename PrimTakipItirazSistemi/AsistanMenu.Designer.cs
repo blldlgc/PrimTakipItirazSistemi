@@ -32,13 +32,14 @@
             this.PrimListesi = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.Itirazlarım = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cagriEkle
             // 
-            this.cagriEkle.Location = new System.Drawing.Point(427, 16);
+            this.cagriEkle.Location = new System.Drawing.Point(426, 16);
             this.cagriEkle.Name = "cagriEkle";
-            this.cagriEkle.Size = new System.Drawing.Size(111, 158);
+            this.cagriEkle.Size = new System.Drawing.Size(146, 158);
             this.cagriEkle.TabIndex = 2;
             this.cagriEkle.Text = "cagriEkle";
             this.cagriEkle.UseVisualStyleBackColor = true;
@@ -46,9 +47,9 @@
             // 
             // PrimListesi
             // 
-            this.PrimListesi.Location = new System.Drawing.Point(593, 16);
+            this.PrimListesi.Location = new System.Drawing.Point(621, 16);
             this.PrimListesi.Name = "PrimListesi";
-            this.PrimListesi.Size = new System.Drawing.Size(111, 158);
+            this.PrimListesi.Size = new System.Drawing.Size(146, 158);
             this.PrimListesi.TabIndex = 3;
             this.PrimListesi.Text = "Prim Listesi";
             this.PrimListesi.UseVisualStyleBackColor = true;
@@ -76,12 +77,23 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.AsistanPanel_Click);
             // 
+            // Itirazlarım
+            // 
+            this.Itirazlarım.Location = new System.Drawing.Point(36, 225);
+            this.Itirazlarım.Name = "Itirazlarım";
+            this.Itirazlarım.Size = new System.Drawing.Size(146, 158);
+            this.Itirazlarım.TabIndex = 4;
+            this.Itirazlarım.Text = "Prim İtirazlarım";
+            this.Itirazlarım.UseVisualStyleBackColor = true;
+            this.Itirazlarım.Click += new System.EventHandler(this.Itırazlarım_Click);
+            // 
             // AsistanMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Itirazlarım);
             this.Controls.Add(this.PrimListesi);
             this.Controls.Add(this.cagriEkle);
             this.Controls.Add(this.button2);
@@ -100,5 +112,6 @@
 		private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button cagriEkle;
         private System.Windows.Forms.Button PrimListesi;
+        private System.Windows.Forms.Button Itirazlarım;
     }
 }

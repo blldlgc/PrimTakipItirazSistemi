@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsistanItırazlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsistanItırazlari.Designer.cs">
+      <DependentUpon>AsistanItırazlari.cs</DependentUpon>
+    </Compile>
     <Compile Include="AsistanPrimListesi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     <Compile Include="YöneticiPanel.Designer.cs">
       <DependentUpon>YöneticiPanel.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AsistanItırazlari.resx">
+      <DependentUpon>AsistanItırazlari.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AsistanPrimListesi.resx">
       <DependentUpon>AsistanPrimListesi.cs</DependentUpon>
     </EmbeddedResource>
