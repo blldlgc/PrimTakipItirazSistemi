@@ -21,7 +21,7 @@ namespace PrimTakipItirazSistemi
         {
             try
             {
-                using (SqlConnection baglantim = new SqlConnection("Data Source=MONSTER\\SQLEXPRESS; Initial Catalog=PrimTakipItirazSistemi; Integrated Security=True; TrustServerCertificate=True"))
+                using (SqlConnection baglantim = new SqlConnection(Form1.baglantiKodu))
                 {
                     string query = @"
                         SELECT 

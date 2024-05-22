@@ -28,5 +28,11 @@ namespace PrimTakipItirazSistemi
 			UyeListele frmUyeListe = new UyeListele();
 			frmUyeListe.Show();
 		}
-	}
+
+        private void Itırazlar_Click(object sender, EventArgs e)
+        {
+			TakimLideriItirazlari takimLideriItirazlari = new TakimLideriItirazlari();
+			takimLideriItirazlari.Show();
+        }
+    }
 }
