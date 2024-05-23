@@ -22,33 +22,15 @@ namespace PrimTakipItirazSistemi
         {
             try
             {
-                using (SqlConnection baglantim = new SqlConnection("Data Source=MONSTER\\SQLEXPRESS; Initial Catalog=PrimTakipItirazSistemi; Integrated Security=True; TrustServerCertificate=True"))
+                using (SqlConnection baglantim = new SqlConnection(Form1.baglantiKodu))
                 {
                     string query = @"
                         SELECT 
-                            a.SicilNo AS [Sicil No],
-                            a.Asistan_Ad + ' ' + a.Asistan_Soyad AS [Ad Soyad],
-                            i.ItirazAciklamasi AS [İtiraz Açıklaması],
-                            p.Ay AS [İtiraz Ayı],
-                            i.ItirazID,
-                            d.DurumAdi AS [İtiraz Durumu],
-                            CASE 
-                                WHEN i.ItirazCevabi IS NULL THEN 'İtiraz Cevapla' 
-                            ELSE 'Cevaplandı' 
-                            END AS [Durum]
-                        FROM 
-                            Itirazlar i
-                        JOIN 
-                            Asistanlar a ON i.AsistanID = a.AsistanID
-                        JOIN
-                            Primler p ON i.PrimID = p.PrimID
-                        JOIN 
-                            TakimLiderleri tl ON a.TakimID = tl.TakimID 
-                        JOIN
-                            ItirazDurumlari d ON i.ItirazDurumuID = d.ItirazDurumuId
+                            [Sicil No], [Ad Soyad], [ItirazID], [İtiraz Ayı], [İtiraz Durumu], [İtiraz Açıklaması], [Durum]
+                        FROM vW_TLItirazListele
                         WHERE 
-                            tl.TakimID = @TakimLideriID -- TakimID ile filtreleme
-                        ORDER BY [İtiraz Ayı], [Sicil No];";
+                            [TakımID] = @TakimLideriID 
+                        ORDER BY [ItirazID] DESC, [Sicil No];";
 
                     SqlDataAdapter verileriListele = new SqlDataAdapter(query, baglantim);
                     verileriListele.SelectCommand.Parameters.AddWithValue("@TakimLideriID", Form1.GirisYapanLiderID);

@@ -43,13 +43,10 @@ namespace PrimTakipItirazSistemi
             try
             {
                 string aramaMetni = textBox1.Text;
-                string query = "SELECT M.Musteri_Ad AS [Müşteri Adı], M.Musteri_Soyad AS [Müşteri Soyadı], C.GorusmeTarihi AS [Görüşme Tarihi], C.BaslangicSaati AS [Başlangıç Saati], C.BitisSaati AS [Bitiş Saati], GK.KonuAdi AS [Görüşme Konusu], GD.DurumAdi AS [Görüşme Durumu] " +
-                       "FROM Musteriler M " +
-                       "INNER JOIN Cagrilar C ON M.MusteriID = C.MusteriID " +
-                       "INNER JOIN GorusmeKonulari GK ON C.GorusmeKonusuID = GK.GorusmeKonusuID " +
-                       "INNER JOIN GorusmeDurumlari GD ON C.GorusmeDurumuID = GD.GorusmeDurumuID " +
-                       "WHERE M.Musteri_Ad LIKE @aramaMetni OR C.CagriID = @cagriID " +
-                       "ORDER BY C.CagriID DESC"; ;
+                string query = "SELECT [Müşteri Adı], [Müşteri Soyadı], [Görüşme Tarihi], [Başlangıç Saati], [Bitiş Saati], [Görüşme Konusu], [Görüşme Durumu], [Çağrı ID] " +
+               "FROM vw_CagriAra " +
+               "WHERE [Müşteri Adı] LIKE @aramaMetni OR [Çağrı ID] = @cagriID " +
+               "ORDER BY [Çağrı ID] DESC";
 
                 using (SqlConnection baglantim = new SqlConnection(Form1.baglantiKodu))
                 {

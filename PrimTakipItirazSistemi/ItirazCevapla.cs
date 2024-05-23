@@ -3,12 +3,16 @@ using System.Data.SqlClient;
 using System.Net.Mail;
 using System.Net;
 using System.Windows.Forms;
+using System.Data;
 
 namespace PrimTakipItirazSistemi
 {
     public partial class ItirazCevapla : Form
     {
         private int itirazID;
+        SqlConnection baglantim = new SqlConnection(Form1.baglantiKodu);
+        string epostaAdresi = "";
+        private int girisYapanLiderID = Form1.GirisYapanLiderID;
 
         public ItirazCevapla(int itirazID)
         {
@@ -18,7 +22,33 @@ namespace PrimTakipItirazSistemi
 
         private void ItirazCevapla_Load(object sender, EventArgs e)
         {
-            // İtiraz detaylarını yükleme kodu buraya gelecek
+            
+        }
+
+        private string GetGroupManagerEmailByTeamID(int TakimID)
+        {
+            string epostaAdresi = "";
+            try
+            {
+                baglantim.Open();
+
+                SqlCommand ekleKomutu2 = new SqlCommand("sp_GetGroupManagerEmailByTeamID", baglantim);
+                ekleKomutu2.CommandType = CommandType.StoredProcedure;
+                ekleKomutu2.Parameters.AddWithValue("@TakimID", TakimID);
+
+                SqlDataReader dr = ekleKomutu2.ExecuteReader();
+                if (dr.Read())
+                {
+                    epostaAdresi = dr["eposta"].ToString();
+                }
+
+                baglantim.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("E-posta adresini alırken bir hata oluştu: " + ex.Message);
+            }
+            return epostaAdresi;
         }
 
         private void buttonGonder_Click(object sender, EventArgs e)
@@ -66,7 +96,7 @@ namespace PrimTakipItirazSistemi
                 SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com"); // Gmail sunucusunu bağlantısı
 
                 mail.From = new MailAddress("vtysprojectmail@gmail.com");
-                mail.To.Add("bdalgic11@gmail.com");
+                mail.To.Add(GetGroupManagerEmailByTeamID(girisYapanLiderID));
                 mail.Subject = itirazID +"nolu itiraz cevabı";
                 mail.Body = itirazID + " nolu itiraza cevabım: "+itirazCevabi + " İtiraz durumu: " + itirazDurumu;
 

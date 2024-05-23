@@ -32,12 +32,9 @@ namespace PrimTakipItirazSistemi
             {
                 baglantim.Open(); // bağlantıyı aç
                 SqlDataAdapter verilerilistele = new SqlDataAdapter(
-                    "SELECT M.Musteri_Ad AS [Müşteri Adı], M.Musteri_Soyad AS [Müşteri Soyadı], C.GorusmeTarihi AS [Görüşme Tarihi], C.BaslangicSaati AS [Başlangıç Saati], C.BitisSaati AS [Bitiş Saati], GK.KonuAdi AS [Görüşme Konusu], GD.DurumAdi AS [Görüşme Durumu] " +
-                    "FROM Musteriler M " +
-                    "INNER JOIN Cagrilar C ON M.MusteriID = C.MusteriID " +
-                    "INNER JOIN GorusmeKonulari GK ON C.GorusmeKonusuID = GK.GorusmeKonusuID " +
-                    "INNER JOIN GorusmeDurumlari GD ON C.GorusmeDurumuID = GD.GorusmeDurumuID " +
-                    "ORDER BY C.CagriID DESC", // en son eklenen kaydı en üste getirmek için ORDER BY kullanılır
+                    "SELECT [Müşteri Adı], [Müşteri Soyadı], [Görüşme Tarihi], [Başlangıç Saati], [Bitiş Saati], [Görüşme Konusu], [Görüşme Durumu], [Çağrı ID] " +
+                    "FROM vw_CagriAra " +
+                    "ORDER BY [Çağrı ID] DESC", 
                     baglantim);
 
                 DataSet dshafıza = new DataSet(); // verileri gruplandırmak için DataSet'i çağırdık

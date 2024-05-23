@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Itırazlar = new System.Windows.Forms.Button();
+            this.cikisBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button2
@@ -89,12 +90,23 @@
             this.Itırazlar.UseVisualStyleBackColor = true;
             this.Itırazlar.Click += new System.EventHandler(this.Itırazlar_Click);
             // 
+            // cikisBtn
+            // 
+            this.cikisBtn.Location = new System.Drawing.Point(458, 237);
+            this.cikisBtn.Name = "cikisBtn";
+            this.cikisBtn.Size = new System.Drawing.Size(154, 152);
+            this.cikisBtn.TabIndex = 5;
+            this.cikisBtn.Text = "Çıkış";
+            this.cikisBtn.UseVisualStyleBackColor = true;
+            this.cikisBtn.Click += new System.EventHandler(this.cikisBtn_Click);
+            // 
             // TakimLideriPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(743, 430);
+            this.Controls.Add(this.cikisBtn);
             this.Controls.Add(this.Itırazlar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -116,5 +128,6 @@
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Itırazlar;
+        private System.Windows.Forms.Button cikisBtn;
     }
 }

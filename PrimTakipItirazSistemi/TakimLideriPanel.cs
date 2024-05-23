@@ -34,5 +34,12 @@ namespace PrimTakipItirazSistemi
 			TakimLideriItirazlari takimLideriItirazlari = new TakimLideriItirazlari();
 			takimLideriItirazlari.Show();
         }
+
+        private void cikisBtn_Click(object sender, EventArgs e)
+        {
+			Form1 form1 = new Form1();
+			this.Hide();
+			form1.Show();
+        }
     }
 }

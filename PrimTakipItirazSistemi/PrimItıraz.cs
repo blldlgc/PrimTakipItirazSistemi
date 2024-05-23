@@ -19,7 +19,7 @@ namespace PrimTakipItirazSistemi
     {
         private int sonPrimId;
         private int GirisYapanAsistanID = Form1.GirisYapanAsistanID;
-        SqlConnection baglantim = new SqlConnection("Data Source=MONSTER\\SQLEXPRESS; Initial Catalog = PrimTakipItirazSistemi; Integrated Security=True; TrustServerCertificate=True");
+        SqlConnection baglantim = new SqlConnection(Form1.baglantiKodu);
         public PrimItıraz(int PrimId)
         {
             InitializeComponent();
@@ -61,7 +61,7 @@ namespace PrimTakipItirazSistemi
 
                 
                 // itiraz ekleme
-                SqlCommand ekleKomutu = new SqlCommand("sp_AddBonusAppeal", baglantim);
+                SqlCommand ekleKomutu = new SqlCommand("sp_PrimItıraz", baglantim);
                 ekleKomutu.CommandType = CommandType.StoredProcedure;
                 ekleKomutu.Parameters.AddWithValue("@AsistanID", GirisYapanAsistanID);
                 ekleKomutu.Parameters.AddWithValue("@PrimID", sonPrimId);
@@ -82,8 +82,6 @@ namespace PrimTakipItirazSistemi
 
             try
             {
-
-
                 MailMessage mail = new MailMessage();
                 SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com"); // Gmail sunucusunu bağlantısı
 
