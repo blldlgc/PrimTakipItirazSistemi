@@ -48,6 +48,8 @@ namespace PrimTakipItirazSistemi
         private void ButtonCikis_Click(object sender, EventArgs e)
         {
             this.Close();
+            AsistanMenu asistanMenu = new AsistanMenu();
+            asistanMenu.Show();
         }
 
         private void primItıraz_click(object sender, EventArgs e)

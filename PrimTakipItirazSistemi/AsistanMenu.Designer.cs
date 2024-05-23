@@ -33,6 +33,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.Itirazlarım = new System.Windows.Forms.Button();
+            this.cikisBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cagriEkle
@@ -87,12 +88,23 @@
             this.Itirazlarım.UseVisualStyleBackColor = true;
             this.Itirazlarım.Click += new System.EventHandler(this.Itırazlarım_Click);
             // 
+            // cikisBtn
+            // 
+            this.cikisBtn.Location = new System.Drawing.Point(621, 225);
+            this.cikisBtn.Name = "cikisBtn";
+            this.cikisBtn.Size = new System.Drawing.Size(146, 158);
+            this.cikisBtn.TabIndex = 5;
+            this.cikisBtn.Text = "Çıkış Yap";
+            this.cikisBtn.UseVisualStyleBackColor = true;
+            this.cikisBtn.Click += new System.EventHandler(this.cikisBtn_click);
+            // 
             // AsistanMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cikisBtn);
             this.Controls.Add(this.Itirazlarım);
             this.Controls.Add(this.PrimListesi);
             this.Controls.Add(this.cagriEkle);
@@ -100,6 +112,7 @@
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AsistanMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AsistanMenu";
             this.Load += new System.EventHandler(this.AsistanMenu_Load);
             this.ResumeLayout(false);
@@ -113,5 +126,6 @@
         private System.Windows.Forms.Button cagriEkle;
         private System.Windows.Forms.Button PrimListesi;
         private System.Windows.Forms.Button Itirazlarım;
+        private System.Windows.Forms.Button cikisBtn;
     }
 }

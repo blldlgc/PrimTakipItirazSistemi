@@ -306,6 +306,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Name = "CagriEkle";
             this.Text = "CagriEkle";
             this.Load += new System.EventHandler(this.CagriEkle_Load);

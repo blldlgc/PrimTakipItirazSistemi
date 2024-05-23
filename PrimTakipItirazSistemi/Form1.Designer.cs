@@ -201,6 +201,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -223,6 +224,7 @@
 		private System.Windows.Forms.RadioButton radioButton3;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button1;
+
 	}
 }
 

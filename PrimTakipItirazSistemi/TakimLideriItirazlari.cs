@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace PrimTakipItirazSistemi
@@ -63,6 +64,22 @@ namespace PrimTakipItirazSistemi
                             DataGridViewButtonCell btnCell = new DataGridViewButtonCell();
                             btnCell.Value = "İtiraz Cevapla";
                             row.Cells["Durum"] = btnCell;
+                        }
+                        // Hücre rengini ayarlama
+                        if (row.Cells["İtiraz Durumu"].Value != null)
+                        {
+                            if (row.Cells["İtiraz Durumu"].Value.ToString() == "Onaylandı")
+                            {
+                                row.Cells["İtiraz Durumu"].Style.BackColor = Color.Green;
+                            }
+                            else if (row.Cells["İtiraz Durumu"].Value.ToString() == "Reddedildi")
+                            {
+                                row.Cells["İtiraz Durumu"].Style.BackColor = Color.Red;
+                            }
+                            else if (row.Cells["İtiraz Durumu"].Value.ToString() == "Bekliyor")
+                            {
+                                row.Cells["İtiraz Durumu"].Style.BackColor = Color.Yellow;
+                            }
                         }
                     }
                 }

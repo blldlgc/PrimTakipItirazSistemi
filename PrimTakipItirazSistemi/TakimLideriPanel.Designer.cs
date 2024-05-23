@@ -102,6 +102,7 @@
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TakimLideriPanel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TakimLideriPanel";
             this.ResumeLayout(false);
             this.PerformLayout();

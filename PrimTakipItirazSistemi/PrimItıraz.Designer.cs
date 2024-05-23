@@ -69,6 +69,7 @@
             this.Controls.Add(this.GonderBtn);
             this.Controls.Add(this.itirazAciklamasi);
             this.Name = "PrimItıraz";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PrimItıraz";
             this.ResumeLayout(false);
             this.PerformLayout();

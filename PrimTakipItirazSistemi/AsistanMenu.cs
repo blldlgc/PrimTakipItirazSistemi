@@ -56,5 +56,12 @@ namespace PrimTakipItirazSistemi
 			AsistanItirazlari asistanItirazlari = new AsistanItirazlari();
 			asistanItirazlari.Show();
         }
+
+        private void cikisBtn_click(object sender, EventArgs e)
+        {
+            this.Hide();
+			Form1 form1 = new Form1();
+			form1.Show();
+        }
     }
 }

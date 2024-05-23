@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace PrimTakipItirazSistemi
@@ -43,6 +44,26 @@ namespace PrimTakipItirazSistemi
                     DataSet ds = new DataSet();
                     verileriListele.Fill(ds);
                     dataGridView1.DataSource = ds.Tables[0];
+
+                    foreach (DataGridViewRow row in dataGridView1.Rows)
+                    {
+                        // Hücre rengini ayarlama
+                        if (row.Cells["İtiraz Durumu"].Value != null)
+                        {
+                            if (row.Cells["İtiraz Durumu"].Value.ToString() == "Onaylandı")
+                            {
+                                row.Cells["İtiraz Durumu"].Style.BackColor = Color.Green;
+                            }
+                            else if (row.Cells["İtiraz Durumu"].Value.ToString() == "Reddedildi")
+                            {
+                                row.Cells["İtiraz Durumu"].Style.BackColor = Color.Red;
+                            }
+                            else if (row.Cells["İtiraz Durumu"].Value.ToString() == "Bekliyor")
+                            {
+                                row.Cells["İtiraz Durumu"].Style.BackColor = Color.Yellow;
+                            }
+                        }
+                    }
                 }
             }
             catch (Exception ex)
