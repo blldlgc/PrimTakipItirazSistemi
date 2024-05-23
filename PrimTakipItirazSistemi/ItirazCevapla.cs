@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Data.SqlClient;
+using System.Net.Mail;
+using System.Net;
 using System.Windows.Forms;
 
 namespace PrimTakipItirazSistemi
@@ -23,10 +25,11 @@ namespace PrimTakipItirazSistemi
         {
             string itirazCevabi = textBoxCevap.Text;
             string itirazDurumu = comboBoxDurum.SelectedItem.ToString();
+            
 
             try
             {
-                using (SqlConnection baglantim = new SqlConnection("Data Source=MONSTER\\SQLEXPRESS; Initial Catalog=PrimTakipItirazSistemi; Integrated Security=True; TrustServerCertificate=True"))
+                using (SqlConnection baglantim = new SqlConnection(Form1.baglantiKodu))
                 {
                     string query = @"
                         UPDATE Itirazlar 
@@ -55,6 +58,30 @@ namespace PrimTakipItirazSistemi
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Prim Takip İtiraz Sistemi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            try
+            {
+                MailMessage mail = new MailMessage();
+                SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com"); // Gmail sunucusunu bağlantısı
+
+                mail.From = new MailAddress("vtysprojectmail@gmail.com");
+                mail.To.Add("bdalgic11@gmail.com");
+                mail.Subject = itirazID +"nolu itiraz cevabı";
+                mail.Body = itirazID + " nolu itiraza cevabım: "+itirazCevabi + " İtiraz durumu: " + itirazDurumu;
+
+                // Sunucu kimlik bilgilerini ayarlama
+                SmtpServer.Port = 587; // Gmail için port numarası
+                SmtpServer.Credentials = new NetworkCredential("vtysprojectmail@gmail.com", "fuul bsuj mcwf amva");
+                SmtpServer.EnableSsl = true;
+
+                // E-postayı gönderme
+                SmtpServer.Send(mail);
+                MessageBox.Show("E-posta başarıyla gönderildi!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("E-posta gönderilirken bir hata oluştu: " + ex.Message);
             }
         }
     }

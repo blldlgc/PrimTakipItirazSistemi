@@ -112,5 +112,10 @@ namespace PrimTakipItirazSistemi
         {
 
         }
+
+        private void PrimItıraz_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
