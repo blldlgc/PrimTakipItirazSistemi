@@ -18,18 +18,18 @@ namespace PrimTakipItirazSistemi
 		}
 
 		private void AsistanPanel_Click(object sender, EventArgs e)
-		{
-			this.Hide();
+		{		
 			AsistanPanel asistanPanel = new AsistanPanel();
 			asistanPanel.Show();
-			}
+            this.Hide();
+        }
 
 		private void AsistanCagrilar_Click(object sender, EventArgs e)
-		{
-			this.Hide();
+		{			
 			AsistanCagrilar asistanCagrilar = new AsistanCagrilar();
 			asistanCagrilar.Show();
-		}
+            this.Hide();
+        }
 
 		private void AsistanMenu_Load(object sender, EventArgs e)
 		{
@@ -37,24 +37,25 @@ namespace PrimTakipItirazSistemi
 		}
 
         private void CagriEkle_Click(object sender, EventArgs e)
-        {
-            this.Hide();
+        {           
             CagriEkle cagriEkle = new CagriEkle();
             cagriEkle.Show();
+            this.Hide();
         }
 
         private void PrimListesi_click(object sender, EventArgs e)
-        {
-            this.Hide();
+        {           
             AsistanPrimListesi primListesi = new AsistanPrimListesi();
             primListesi.Show();
+            this.Hide();
         }
 
         private void Itırazlarım_Click(object sender, EventArgs e)
         {
-			this.Hide();
+			
 			AsistanItirazlari asistanItirazlari = new AsistanItirazlari();
-			asistanItirazlari.Show();
+			asistanItirazlari.Show(); 
+            this.Hide();
         }
 
         private void cikisBtn_click(object sender, EventArgs e)

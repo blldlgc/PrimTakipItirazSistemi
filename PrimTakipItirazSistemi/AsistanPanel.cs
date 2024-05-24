@@ -20,7 +20,7 @@ namespace PrimTakipItirazSistemi
 		{
 			InitializeComponent();
 		}
-		SqlConnection baglantim = new SqlConnection("Data Source=DESKTOP-33E72RO; Initial Catalog = PrimTakipItirazSistemi; Integrated Security=True ");
+		SqlConnection baglantim = new SqlConnection(Form1.baglantiKodu);
 
 		private void AsistanPanel_Load(object sender, EventArgs e)
 		{

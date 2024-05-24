@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PrimTakipItirazSistemi
@@ -13,32 +14,42 @@ namespace PrimTakipItirazSistemi
             InitializeComponent();
         }
 
-        private void HedefBildirim_Load(object sender, EventArgs e)
+        private async void HedefBildirim_Load(object sender, EventArgs e)
         {
-            HedefListele();
+           await HedefListele();
         }
 
-        private void HedefListele()
+        private async Task HedefListele()
         {
             try
             {
                 using (SqlConnection baglantim = new SqlConnection(Form1.baglantiKodu))
                 {
+                    await baglantim.OpenAsync();
                     string query = @"
-                        SELECT 
+                        SELECT TOP 20 
                             AsistanID,
                             NotificationDate AS 'Hedef Tarihi',
                             Message AS 'Hedef Açıklaması'
                         FROM 
-                            HedefBildirimi";
+                            HedefBildirimi
+                        WHERE 
+                            Message IS NOT NULL
+                        ORDER BY 
+                            ID DESC";
 
                     SqlDataAdapter verileriListele = new SqlDataAdapter(query, baglantim);
-                    verileriListele.SelectCommand.Parameters.AddWithValue("@AsistanID", Form1.GirisYapanAsistanID);
                     DataSet ds = new DataSet();
-                    verileriListele.Fill(ds);
-                    dataGridView1.DataSource = ds.Tables[0];
+                    await Task.Run(() => verileriListele.Fill(ds));
 
-                    
+                    if (ds.Tables.Count > 0)
+                    {
+                        dataGridView1.DataSource = ds.Tables[0];
+                    }
+                    else
+                    {
+                        MessageBox.Show("Veri bulunamadı.", "Prim Takip İtiraz Sistemi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
             }
             catch (Exception ex)
