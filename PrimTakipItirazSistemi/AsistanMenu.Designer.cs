@@ -34,6 +34,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.Itirazlarım = new System.Windows.Forms.Button();
             this.cikisBtn = new System.Windows.Forms.Button();
+            this.HedefBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cagriEkle
@@ -98,12 +99,23 @@
             this.cikisBtn.UseVisualStyleBackColor = true;
             this.cikisBtn.Click += new System.EventHandler(this.cikisBtn_click);
             // 
+            // HedefBtn
+            // 
+            this.HedefBtn.Location = new System.Drawing.Point(231, 225);
+            this.HedefBtn.Name = "HedefBtn";
+            this.HedefBtn.Size = new System.Drawing.Size(146, 158);
+            this.HedefBtn.TabIndex = 6;
+            this.HedefBtn.Text = "Hedef Görüntüle";
+            this.HedefBtn.UseVisualStyleBackColor = true;
+            this.HedefBtn.Click += new System.EventHandler(this.Hedef_Click);
+            // 
             // AsistanMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.HedefBtn);
             this.Controls.Add(this.cikisBtn);
             this.Controls.Add(this.Itirazlarım);
             this.Controls.Add(this.PrimListesi);
@@ -127,5 +139,6 @@
         private System.Windows.Forms.Button PrimListesi;
         private System.Windows.Forms.Button Itirazlarım;
         private System.Windows.Forms.Button cikisBtn;
+        private System.Windows.Forms.Button HedefBtn;
     }
 }
