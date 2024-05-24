@@ -212,11 +212,12 @@
             // 
             // btnCikis
             // 
-            this.btnCikis.Location = new System.Drawing.Point(753, 28);
+            this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCikis.Image = global::PrimTakipItirazSistemi.Properties.Resources.home__2_;
+            this.btnCikis.Location = new System.Drawing.Point(809, 0);
             this.btnCikis.Name = "btnCikis";
-            this.btnCikis.Size = new System.Drawing.Size(69, 44);
+            this.btnCikis.Size = new System.Drawing.Size(69, 48);
             this.btnCikis.TabIndex = 17;
-            this.btnCikis.Text = "button3";
             this.btnCikis.UseVisualStyleBackColor = true;
             this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 

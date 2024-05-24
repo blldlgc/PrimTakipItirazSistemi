@@ -121,11 +121,11 @@
   <data name="dust (1) (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dust (1) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="home (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="magnifying-glass (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnifying-glass (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exit (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exit (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="i-fotor-20240524171336" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\i-fotor-20240524171336.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tik2-fotor-20240517165237" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tik2-fotor-20240517165237.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,14 +133,11 @@
   <data name="tik-fotor-20240517164957" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tik-fotor-20240517164957.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ayarlar-fotor-20240509147411" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ayarlar-fotor-20240509147411.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="add-user-min" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add-user-min.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="remove (2) (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\remove (2) (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="4298389-fotor-20240521163344" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4298389-fotor-20240521163344.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="skills (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\skills (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,31 +145,43 @@
   <data name="add (1)-min" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add (1)-min.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cagriListesi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cagriListesi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="magnifying-glass (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\magnifying-glass (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tik-fotor-20240517164749" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tik-fotor-20240517164749.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ayarlar-fotor-2024050914741" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ayarlar-fotor-2024050914741.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tik-fotor-2024051716493" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tik-fotor-2024051716493.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="home (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OIP-fotor-20240524165744" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OIP-fotor-20240524165744.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cagriListesi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cagriListesi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="update (1) (1) (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\update (1) (1) (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="remove (2) (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\remove (2) (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="remove (2) (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remove (2) (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tik-fotor-2024051716493" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tik-fotor-2024051716493.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cagriListesi1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cagriListesi1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tik-fotor-20240517164749" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tik-fotor-20240517164749.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ayarlar-fotor-20240509147411" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ayarlar-fotor-20240509147411.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4298389-fotor-20240521163344" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4298389-fotor-20240521163344.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="remove (2) (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remove (2) (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hiclipart.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hiclipart.com.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

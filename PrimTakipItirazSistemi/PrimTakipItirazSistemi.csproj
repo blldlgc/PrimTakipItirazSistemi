@@ -305,5 +305,20 @@
   <ItemGroup>
     <None Include="Resources\4298389-fotor-20240521163344.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP-fotor-20240524165744.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i-fotor-20240524171336.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hiclipart.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\7650833-fotor-20240524173852.png" />
+    <Content Include="Resources\hedef-fotor-20240524171452.png" />
+    <Content Include="Resources\i.png" />
+    <Content Include="Resources\icon-phone2_87976-fotor-2024052418613.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

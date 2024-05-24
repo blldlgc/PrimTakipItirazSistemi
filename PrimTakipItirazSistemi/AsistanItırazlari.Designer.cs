@@ -25,19 +25,20 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 50);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 80);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 350);
+            this.dataGridView1.Size = new System.Drawing.Size(544, 320);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // buttonCikis
             // 
-            this.buttonCikis.Location = new System.Drawing.Point(706, 12);
+            this.buttonCikis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonCikis.Image = global::PrimTakipItirazSistemi.Properties.Resources.home__2_;
+            this.buttonCikis.Location = new System.Drawing.Point(486, 1);
             this.buttonCikis.Name = "buttonCikis";
-            this.buttonCikis.Size = new System.Drawing.Size(82, 27);
+            this.buttonCikis.Size = new System.Drawing.Size(82, 48);
             this.buttonCikis.TabIndex = 4;
-            this.buttonCikis.Text = "Çıkış";
             this.buttonCikis.UseVisualStyleBackColor = true;
             this.buttonCikis.Click += new System.EventHandler(this.ButtonCikis_Click);
             // 
@@ -46,7 +47,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(568, 450);
             this.Controls.Add(this.buttonCikis);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

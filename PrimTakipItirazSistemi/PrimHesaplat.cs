@@ -62,7 +62,7 @@ namespace PrimTakipItirazSistemi
                     ekleKomutu.ExecuteNonQuery();
 
                     baglantim.Close();
-                    MessageBox.Show("Prim Hesaplama İşlemi GErçekleştirildi", "Prim Takip Itiraz Sistemi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("Prim Hesaplama İşlemi Gerçekleştirildi", "Prim Takip Itiraz Sistemi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
                 }
                 catch (Exception hatamsj)

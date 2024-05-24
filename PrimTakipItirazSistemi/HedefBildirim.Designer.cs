@@ -27,20 +27,21 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 50);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 68);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dataGridView1.Size = new System.Drawing.Size(377, 350);
+            this.dataGridView1.Size = new System.Drawing.Size(377, 332);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // buttonCikis
             // 
-            this.buttonCikis.Location = new System.Drawing.Point(307, 12);
+            this.buttonCikis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonCikis.Image = global::PrimTakipItirazSistemi.Properties.Resources.home__2_;
+            this.buttonCikis.Location = new System.Drawing.Point(319, 2);
             this.buttonCikis.Name = "buttonCikis";
-            this.buttonCikis.Size = new System.Drawing.Size(82, 27);
+            this.buttonCikis.Size = new System.Drawing.Size(82, 50);
             this.buttonCikis.TabIndex = 4;
-            this.buttonCikis.Text = "Çıkış";
             this.buttonCikis.UseVisualStyleBackColor = true;
             this.buttonCikis.Click += new System.EventHandler(this.ButtonCikis_Click);
             // 

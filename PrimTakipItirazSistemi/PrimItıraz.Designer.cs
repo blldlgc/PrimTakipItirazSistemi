@@ -2,15 +2,8 @@
 {
     partial class PrimItıraz
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +15,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.itirazAciklamasi = new System.Windows.Forms.RichTextBox();
@@ -35,7 +24,7 @@
             // 
             // itirazAciklamasi
             // 
-            this.itirazAciklamasi.Location = new System.Drawing.Point(120, 93);
+            this.itirazAciklamasi.Location = new System.Drawing.Point(61, 69);
             this.itirazAciklamasi.Name = "itirazAciklamasi";
             this.itirazAciklamasi.Size = new System.Drawing.Size(316, 123);
             this.itirazAciklamasi.TabIndex = 0;
@@ -44,7 +33,7 @@
             // 
             // GonderBtn
             // 
-            this.GonderBtn.Location = new System.Drawing.Point(238, 248);
+            this.GonderBtn.Location = new System.Drawing.Point(173, 218);
             this.GonderBtn.Name = "GonderBtn";
             this.GonderBtn.Size = new System.Drawing.Size(75, 23);
             this.GonderBtn.TabIndex = 1;
@@ -55,7 +44,7 @@
             // primId
             // 
             this.primId.AutoSize = true;
-            this.primId.Location = new System.Drawing.Point(238, 37);
+            this.primId.Location = new System.Drawing.Point(178, 38);
             this.primId.Name = "primId";
             this.primId.Size = new System.Drawing.Size(0, 13);
             this.primId.TabIndex = 2;
@@ -64,14 +53,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(562, 450);
+            this.ClientSize = new System.Drawing.Size(438, 302);
             this.Controls.Add(this.primId);
             this.Controls.Add(this.GonderBtn);
             this.Controls.Add(this.itirazAciklamasi);
             this.Name = "PrimItıraz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PrimItıraz";
-            this.Load += new System.EventHandler(this.PrimItıraz_Load);
+            this.Text = "PrimItiraz";
             this.ResumeLayout(false);
             this.PerformLayout();
 

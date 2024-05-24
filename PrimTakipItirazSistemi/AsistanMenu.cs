@@ -20,7 +20,7 @@ namespace PrimTakipItirazSistemi
 		private void AsistanPanel_Click(object sender, EventArgs e)
 		{
 			this.Hide();
-		AsistanPanel asistanPanel = new AsistanPanel();
+			AsistanPanel asistanPanel = new AsistanPanel();
 			asistanPanel.Show();
 			}
 

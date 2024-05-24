@@ -76,7 +76,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(391, 356);
+            this.ClientSize = new System.Drawing.Size(391, 292);
             this.Controls.Add(this.PrimHesapla);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);

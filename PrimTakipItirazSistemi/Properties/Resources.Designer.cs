@@ -153,6 +153,16 @@ namespace PrimTakipItirazSistemi.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap hiclipart_com {
+            get {
+                object obj = ResourceManager.GetObject("hiclipart.com", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap home__2_ {
             get {
                 object obj = ResourceManager.GetObject("home (2)", resourceCulture);
@@ -163,9 +173,29 @@ namespace PrimTakipItirazSistemi.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap i_fotor_20240524171336 {
+            get {
+                object obj = ResourceManager.GetObject("i-fotor-20240524171336", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap magnifying_glass__2_ {
             get {
                 object obj = ResourceManager.GetObject("magnifying-glass (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap OIP_fotor_20240524165744 {
+            get {
+                object obj = ResourceManager.GetObject("OIP-fotor-20240524165744", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

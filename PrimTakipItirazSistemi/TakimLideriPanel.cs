@@ -41,5 +41,11 @@ namespace PrimTakipItirazSistemi
 			this.Hide();
 			form1.Show();
         }
+
+        private void HedefBtn_Click(object sender, EventArgs e)
+        {
+			HedefBildirim hedefBildirim = new HedefBildirim();
+			hedefBildirim.Show();
+        }
     }
 }
