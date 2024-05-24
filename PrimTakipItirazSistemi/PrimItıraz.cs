@@ -53,6 +53,8 @@ namespace PrimTakipItirazSistemi
             }
             return epostaAdresi;
         }
+
+
         private void Gonder_Click(object sender, EventArgs e)
         {
             try

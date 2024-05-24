@@ -22,6 +22,8 @@
             this.buttonGonder = new System.Windows.Forms.Button();
             this.labelCevap = new System.Windows.Forms.Label();
             this.labelDurum = new System.Windows.Forms.Label();
+            this.primTakipItirazSistemiDataSet1 = new PrimTakipItirazSistemi.PrimTakipItirazSistemiDataSet();
+            ((System.ComponentModel.ISupportInitialize)(this.primTakipItirazSistemiDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxCevap
@@ -58,7 +60,7 @@
             this.labelCevap.AutoSize = true;
             this.labelCevap.Location = new System.Drawing.Point(12, 9);
             this.labelCevap.Name = "labelCevap";
-            this.labelCevap.Size = new System.Drawing.Size(79, 13);
+            this.labelCevap.Size = new System.Drawing.Size(82, 13);
             this.labelCevap.TabIndex = 3;
             this.labelCevap.Text = "İtiraz Açıklaması";
             // 
@@ -67,9 +69,14 @@
             this.labelDurum.AutoSize = true;
             this.labelDurum.Location = new System.Drawing.Point(12, 134);
             this.labelDurum.Name = "labelDurum";
-            this.labelDurum.Size = new System.Drawing.Size(76, 13);
+            this.labelDurum.Size = new System.Drawing.Size(69, 13);
             this.labelDurum.TabIndex = 4;
             this.labelDurum.Text = "İtiraz Durumu";
+            // 
+            // primTakipItirazSistemiDataSet1
+            // 
+            this.primTakipItirazSistemiDataSet1.DataSetName = "PrimTakipItirazSistemiDataSet";
+            this.primTakipItirazSistemiDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // ItirazCevapla
             // 
@@ -85,8 +92,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "İtiraz Cevapla";
             this.Load += new System.EventHandler(this.ItirazCevapla_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.primTakipItirazSistemiDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
@@ -96,5 +105,6 @@
         private System.Windows.Forms.Button buttonGonder;
         private System.Windows.Forms.Label labelCevap;
         private System.Windows.Forms.Label labelDurum;
+        private PrimTakipItirazSistemiDataSet primTakipItirazSistemiDataSet1;
     }
 }

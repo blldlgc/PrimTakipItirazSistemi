@@ -195,7 +195,8 @@ namespace PrimTakipItirazSistemi
 							soyadi = kayıtokuma.GetValue(2).ToString();// soyadı sql in 2. alanına aktardık.
 							yetki = kayıtokuma.GetValue(3).ToString();// yetkiyi sql in 3. alanına aktardık.
 
-							int yoneticiID = GetGrupYoneticiID(kul_adi);
+                            veriGetir();
+                            int yoneticiID = GetGrupYoneticiID(kul_adi);
                             GirisYapanAsistanID = yoneticiID;
 
 							this.Hide();// Yönetici girişi başarılı olduğu için bu form kapanıcak ve yönetici formu açılacak. Yönetici formunu bunun alt satırına geçince yazıyoruz. Bunun için önce yeni bir form açmamız gerekli. Proje --> form ekle (Project --> add windows form) ile ekliyoruz.

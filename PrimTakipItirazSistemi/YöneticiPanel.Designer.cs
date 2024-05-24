@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
             this.button1 = new System.Windows.Forms.Button();
+            this.PrimHesaplat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -41,11 +42,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // PrimHesaplat
+            // 
+            this.PrimHesaplat.Location = new System.Drawing.Point(231, 42);
+            this.PrimHesaplat.Name = "PrimHesaplat";
+            this.PrimHesaplat.Size = new System.Drawing.Size(148, 153);
+            this.PrimHesaplat.TabIndex = 1;
+            this.PrimHesaplat.Text = "Aylık Prim Hesaplat";
+            this.PrimHesaplat.UseVisualStyleBackColor = true;
+            this.PrimHesaplat.Click += new System.EventHandler(this.PrimHesapat_Click);
+            // 
             // YöneticiPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.PrimHesaplat);
             this.Controls.Add(this.button1);
             this.Name = "YöneticiPanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -57,5 +69,6 @@
 		#endregion
 
 		private System.Windows.Forms.Button button1;
-	}
+        private System.Windows.Forms.Button PrimHesaplat;
+    }
 }

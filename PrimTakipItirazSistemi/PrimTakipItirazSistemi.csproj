@@ -95,6 +95,12 @@
       <DependentUpon>ItirazCevapla.cs</DependentUpon>
     </Compile>
     <Compile Include="KayıtDuzelt.cs" />
+    <Compile Include="PrimHesaplat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrimHesaplat.Designer.cs">
+      <DependentUpon>PrimHesaplat.cs</DependentUpon>
+    </Compile>
     <Compile Include="PrimItıraz.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ItirazCevapla.resx">
       <DependentUpon>ItirazCevapla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrimHesaplat.resx">
+      <DependentUpon>PrimHesaplat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PrimItıraz.resx">
       <DependentUpon>PrimItıraz.cs</DependentUpon>

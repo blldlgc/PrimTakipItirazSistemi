@@ -60,7 +60,7 @@ namespace PrimTakipItirazSistemi
                             }
                             else if (row.Cells["İtiraz Durumu"].Value.ToString() == "Bekliyor")
                             {
-                                row.Cells["İtiraz Durumu"].Style.BackColor = Color.Yellow;
+                                row.Cells["İtiraz Durumu"].Style.BackColor = Color.Orange;
                             }
                         }
                     }

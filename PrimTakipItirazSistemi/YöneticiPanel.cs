@@ -23,5 +23,13 @@ namespace PrimTakipItirazSistemi
 			UyeEkle uyeEkle = new UyeEkle();
 			uyeEkle.Show();
 		}
-	}
+
+        private void PrimHesapat_Click(object sender, EventArgs e)
+        {
+
+			PrimHesaplat primHesaplat = new PrimHesaplat();
+			primHesaplat.Show();
+
+        }
+    }
 }
